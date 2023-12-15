@@ -968,7 +968,7 @@ public class Demo06_MultiParallelism {
 
 怎么办呢？
 
-Flink通过设置**最大空闲等待时间**来解决watermark对齐的问题。
+Flink通过设置**最大空闲等待时间**withIdleness来解决watermark对齐的问题。
 
 ### DataStream案例（withIdleness）
 
@@ -1081,7 +1081,7 @@ public class Demo07_WithIdleness {
 
 Flink是做流计算的，流式计算是没有结束的，任务是不会终止的。
 
-也就是说，如果任务出现异常，Flink是如何保证数据的一致性的。
+也就是说，如果任务出现异常，Flink是如何保证数据的一致性的。checkPoint保证数据的一致性
 
 在流式计算中，Flink是通过Checkpoint机制来保证任务持续稳定运行的。
 

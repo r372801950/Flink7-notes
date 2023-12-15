@@ -140,7 +140,7 @@ public class Demo08_Checkpoint {
 
 重启策略，英文是RestartStrategy。
 
-Flink提供了4种重启策略：
+Flink提供了4种重启策略：3种重启策略、固定延迟重启，失败率重启
 
 * 不重启
 * 固定延迟重启
